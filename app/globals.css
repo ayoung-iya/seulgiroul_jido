@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-font-default: #2d3136;
+}
+
+body {
+  color: var(--color-font-default);
+  font-family: var(--font-pretendard);
+}
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+button {
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  color: inherit;
+  font: inherit;
+}
+
+@layer utilities {
+  .font-title-1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .font-title-2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .font-title-3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .font-title-4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .font-subtitle-1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-subtitle-2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-subtitle-3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-body-1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+  }
+
+  .font-body-2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+  }
+
+  .font-body-3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+  }
+
+  .font-caption-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .font-caption-2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .font-caption-3 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .font-btn-1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-btn-2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-btn-3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .font-btn-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  .font-tag {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
