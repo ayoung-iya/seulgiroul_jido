@@ -40,7 +40,13 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index", "unknown"],
+        "groups": [
+          ["builtin", "external"],
+          ["internal"],
+          ["parent", "sibling", "index"],
+          ["object", "type"],
+          ["unknown"]
+        ],
         "pathGroups": [
           {
             "pattern": "react",
@@ -48,17 +54,37 @@
             "position": "before"
           },
           {
-            "pattern": "react*,react*/**",
+            "pattern": "{react/**,react-dom/**}",
             "group": "external",
             "position": "before"
           },
           {
-            "pattern": "@/**/*",
+            "pattern": "next",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "next/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "{app/**, constants/**,apis/**,types/**,utils/**,hooks/**}",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "{components/**}",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "{icons/**,images/**}",
             "group": "internal",
             "position": "after"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": [],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
