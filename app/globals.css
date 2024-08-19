@@ -95,6 +95,12 @@ button {
   font: inherit;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+
 @layer utilities {
   .font-title-1 {
     font-size: 32px;
