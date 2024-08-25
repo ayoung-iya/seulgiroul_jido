@@ -6,11 +6,11 @@ import { IconType } from '@/app/components/common/Icon';
 
 import SidebarItem from './SidebarItem';
 
-interface SidebarList {
+interface SidebarListProps {
   list: { id: string; category: IconType; name: string; address: string; isBookmarked: boolean }[];
 }
 
-const SidebarList = ({ list }: SidebarList) => {
+const SidebarList = ({ list }: SidebarListProps) => {
   const [selectedId, setSelectedId] = useState('');
 
   const changeSelectedId = (id: string) => () => {

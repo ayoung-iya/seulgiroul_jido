@@ -7,7 +7,7 @@ import bookmarkFilled from '@/public/icons/bookmark-filled.svg';
 import bookmark from '@/public/icons/bookmark.svg';
 import chevron from '@/public/icons/chevron.svg';
 
-interface SideItem {
+interface SideItemProps {
   id: string;
   category: IconType;
   name: string;
@@ -17,7 +17,15 @@ interface SideItem {
   isBookmarked: boolean;
 }
 
-const SidebarItem = ({ id, category, name, address, selectedId, handleChangeSelectedId, isBookmarked }: SideItem) => {
+const SidebarItem = ({
+  id,
+  category,
+  name,
+  address,
+  selectedId,
+  handleChangeSelectedId,
+  isBookmarked,
+}: SideItemProps) => {
   return (
     <li className="w-full rounded-md bg-bluebell-100 p-2">
       <button type="button" className="flex w-full items-center justify-between" onClick={handleChangeSelectedId}>
