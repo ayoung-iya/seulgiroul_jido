@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import restaurantIcon from '@/public/icons/restaurant.png';
-import cafeIcon from '@/public/icons/cafe.png';
+
 import beerIcon from '@/public/icons/beer.png';
+import cafeIcon from '@/public/icons/cafe.png';
+import restaurantIcon from '@/public/icons/restaurant.png';
 
 const Icons = {
   restaurant: { color: 'bg-[#F3D0C3]', src: restaurantIcon, alt: '식당' },
@@ -9,7 +10,7 @@ const Icons = {
   beer: { color: 'bg-[#BCD7EA]', src: beerIcon, alt: '맥주' },
 };
 
-type IconType = 'restaurant' | 'cafe' | 'beer';
+export type IconType = 'restaurant' | 'cafe' | 'beer';
 
 interface IconProps {
   type: IconType;
